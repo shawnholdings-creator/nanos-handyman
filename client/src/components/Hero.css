@@ -13,13 +13,13 @@
   align-items: center;
 }
 
-/* Badge Top */
+/* Trust Badge — Orange pill */
 .hero__badge-top {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: var(--accent-subtle);
-  color: var(--accent);
+  background: var(--orange-subtle);
+  color: var(--orange);
   font-size: 0.8rem;
   font-weight: 600;
   padding: 6px 14px;
@@ -31,6 +31,7 @@
 .hero__content h1 {
   margin-bottom: 20px;
   letter-spacing: -0.02em;
+  color: var(--navy);
 }
 .hero__subtitle {
   font-size: 1.05rem;
@@ -72,7 +73,7 @@
   border-bottom: 1px solid var(--border);
   font-weight: 600;
   font-size: 0.9rem;
-  color: var(--text-primary);
+  color: var(--navy);
 }
 .hero__checklist-row {
   display: flex;
@@ -81,27 +82,11 @@
   padding: 14px 20px;
   border-bottom: 1px solid var(--border);
 }
-.hero__checklist-row:last-child {
-  border-bottom: none;
-}
-.hero__checklist-check {
-  color: var(--success);
-  flex-shrink: 0;
-}
-.hero__checklist-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-.hero__checklist-job {
-  font-weight: 500;
-  font-size: 0.9rem;
-  color: var(--text-primary);
-}
-.hero__checklist-time {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-}
+.hero__checklist-row:last-child { border-bottom: none; }
+.hero__checklist-check { color: var(--success); flex-shrink: 0; }
+.hero__checklist-info { flex: 1; display: flex; flex-direction: column; }
+.hero__checklist-job { font-weight: 500; font-size: 0.9rem; color: var(--navy); }
+.hero__checklist-time { font-size: 0.78rem; color: var(--text-muted); }
 .hero__checklist-status {
   font-size: 0.78rem;
   font-weight: 600;
@@ -113,17 +98,13 @@
 
 /* Responsive */
 @media (max-width: 900px) {
-  .hero__inner {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
+  .hero__inner { grid-template-columns: 1fr; gap: 40px; }
   .hero__content { text-align: center; }
   .hero__subtitle { margin-left: auto; margin-right: auto; }
   .hero__actions { justify-content: center; }
   .hero__badges { justify-content: center; }
   .hero__badge-top { margin-left: auto; margin-right: auto; }
 }
-
 @media (max-width: 480px) {
   .hero { padding-top: 72px; min-height: auto; padding-bottom: 48px; }
   .hero__actions { flex-direction: column; }

@@ -19,7 +19,7 @@
   justify-content: space-between;
 }
 
-/* Logo */
+/* Logo — Navy base with orange accent */
 .navbar__logo {
   display: flex;
   align-items: center;
@@ -27,11 +27,11 @@
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 1.25rem;
-  color: var(--text-primary);
+  color: var(--navy);
   white-space: nowrap;
 }
-.navbar__logo:hover { color: var(--accent); }
-.navbar__logo svg { color: var(--accent); }
+.navbar__logo:hover { color: var(--navy-light); }
+.navbar__logo svg { color: var(--orange); }
 
 /* Links */
 .navbar__links {
@@ -46,9 +46,9 @@
   font-size: 0.9rem;
   transition: color var(--transition-fast);
 }
-.navbar__links a:hover { color: var(--text-primary); }
+.navbar__links a:hover { color: var(--navy); }
 
-/* CTA */
+/* CTA — Orange button */
 .navbar__cta {
   padding: 10px 20px;
   font-size: 0.85rem;
@@ -59,7 +59,7 @@
   display: none;
   background: none;
   border: none;
-  color: var(--text-primary);
+  color: var(--navy);
   cursor: pointer;
   padding: 4px;
 }

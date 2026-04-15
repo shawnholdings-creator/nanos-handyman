@@ -38,16 +38,17 @@
 }
 .testimonials__name {
   font-weight: 600;
-  color: var(--text-primary);
+  color: var(--navy);
 }
 .testimonials__divider {
   color: var(--text-muted);
 }
 .testimonials__service {
-  color: var(--accent);
+  color: var(--orange);
   font-weight: 500;
 }
 
+/* Arrow — Navy border, orange on hover */
 .testimonials__arrow {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
@@ -63,10 +64,11 @@
   flex-shrink: 0;
 }
 .testimonials__arrow:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--orange);
+  color: var(--orange);
 }
 
+/* Dots — Orange active */
 .testimonials__dots {
   display: flex;
   justify-content: center;
@@ -83,7 +85,7 @@
   transition: all var(--transition-fast);
 }
 .testimonials__dot--active {
-  background: var(--accent);
+  background: var(--orange);
   transform: scale(1.3);
 }
 

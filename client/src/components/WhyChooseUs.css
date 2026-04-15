@@ -25,20 +25,22 @@
   align-items: flex-start;
 }
 
+/* Icon — Navy on navy-subtle background */
 .why__icon {
   width: 40px;
   height: 40px;
   border-radius: var(--radius-md);
-  background: var(--accent-subtle);
+  background: var(--navy-subtle);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent);
+  color: var(--navy);
   flex-shrink: 0;
 }
 
 .why__item h3 {
   margin-bottom: 4px;
+  color: var(--navy);
 }
 .why__item p {
   font-size: 0.88rem;
@@ -47,14 +49,10 @@
 }
 
 @media (max-width: 768px) {
-  .why__inner {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
+  .why__inner { grid-template-columns: 1fr; gap: 40px; }
   .why__text { text-align: center; }
   .why__text .section-subtitle { margin: 8px auto 0; }
 }
-
 @media (max-width: 480px) {
   .why__item { gap: 12px; }
 }

@@ -21,15 +21,16 @@
   align-items: center;
   gap: 14px;
 }
+/* Icon — Navy on navy-subtle */
 .contact__detail-icon {
   width: 40px;
   height: 40px;
   border-radius: var(--radius-md);
-  background: var(--accent-subtle);
+  background: var(--navy-subtle);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent);
+  color: var(--navy);
   flex-shrink: 0;
 }
 .contact__detail div {
@@ -42,7 +43,7 @@
   font-weight: 500;
 }
 .contact__detail-value {
-  color: var(--text-primary);
+  color: var(--navy);
   font-weight: 600;
   font-size: 0.95rem;
 }
@@ -54,6 +55,7 @@
 .contact__form h3 {
   margin-bottom: 24px;
   font-size: 1.15rem;
+  color: var(--navy);
 }
 
 .contact__row {
@@ -89,7 +91,7 @@
 .contact__field input:focus,
 .contact__field select:focus,
 .contact__field textarea:focus {
-  border-color: var(--accent);
+  border-color: var(--orange);
 }
 .contact__field select {
   appearance: none;
@@ -99,6 +101,7 @@
   resize: vertical;
 }
 
+/* Submit — Orange CTA */
 .contact__submit {
   width: 100%;
   margin-top: 4px;

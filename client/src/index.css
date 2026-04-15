@@ -1,6 +1,7 @@
 /* ============================================================
    Nano's Handyman Services — Design System
-   Theme: Clean & Professional — Minimal, straight lines, no clutter
+   Theme: Clean & Professional
+   Palette: Navy Blue + White + Orange
    Message: "Reliable, shows up, gets it done"
    ============================================================ */
 
@@ -12,24 +13,28 @@
 }
 
 :root {
-  /* Clean Professional Palette */
+  /* Navy Blue + White + Orange Palette */
   --bg-primary: #ffffff;
-  --bg-secondary: #f8f9fa;
-  --bg-dark: #1a1a2e;
+  --bg-secondary: #f7f8fa;
+  --bg-dark: #0f2847;
   --bg-card: #ffffff;
   
-  --accent: #2563eb;
-  --accent-hover: #1d4ed8;
-  --accent-light: #eff6ff;
-  --accent-subtle: rgba(37, 99, 235, 0.08);
+  --navy: #1e3a5f;
+  --navy-light: #2a4f7a;
+  --navy-subtle: rgba(30, 58, 95, 0.06);
   
-  --text-primary: #111827;
-  --text-secondary: #4b5563;
-  --text-muted: #9ca3af;
+  --orange: #f97316;
+  --orange-hover: #ea580c;
+  --orange-light: #fff7ed;
+  --orange-subtle: rgba(249, 115, 22, 0.08);
+  
+  --text-primary: #1e3a5f;
+  --text-secondary: #4b5e73;
+  --text-muted: #8899a8;
   
   --success: #16a34a;
-  --border: #e5e7eb;
-  --border-hover: #d1d5db;
+  --border: #e2e6eb;
+  --border-hover: #cbd2da;
   
   /* Typography */
   --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
@@ -76,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.2;
-  color: var(--text-primary);
+  color: var(--navy);
 }
 
 h1 { font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 800; }
@@ -90,11 +95,11 @@ p {
 }
 
 a {
-  color: var(--accent);
+  color: var(--navy);
   text-decoration: none;
   transition: color var(--transition-fast);
 }
-a:hover { color: var(--accent-hover); }
+a:hover { color: var(--orange); }
 
 /* --- Buttons --- */
 .btn {
@@ -115,24 +120,24 @@ a:hover { color: var(--accent-hover); }
 }
 
 .btn-primary {
-  background: var(--accent);
+  background: var(--orange);
   color: #ffffff;
 }
 .btn-primary:hover {
-  background: var(--accent-hover);
+  background: var(--orange-hover);
   color: #ffffff;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.3);
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--text-primary);
+  color: var(--navy);
   border: 1.5px solid var(--border);
 }
 .btn-secondary:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--navy);
+  color: var(--navy);
   transform: translateY(-1px);
 }
 
@@ -146,7 +151,7 @@ a:hover { color: var(--accent-hover); }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: var(--accent);
+  color: var(--orange);
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 0.8rem;
@@ -170,7 +175,7 @@ a:hover { color: var(--accent-hover); }
 
 /* --- Accent Text --- */
 .text-accent {
-  color: var(--accent);
+  color: var(--orange);
 }
 
 /* --- Clean Card --- */
@@ -181,7 +186,7 @@ a:hover { color: var(--accent-hover); }
   transition: all var(--transition-base);
 }
 .card:hover {
-  border-color: var(--accent);
+  border-color: var(--orange);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
@@ -213,6 +218,6 @@ a:hover { color: var(--accent-hover); }
 
 /* --- Selection --- */
 ::selection {
-  background: var(--accent);
+  background: var(--orange);
   color: #ffffff;
 }

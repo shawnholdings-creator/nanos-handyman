@@ -1,6 +1,6 @@
 .footer {
   background: var(--bg-dark);
-  color: #d1d5db;
+  color: #c9d1db;
   padding-top: 56px;
 }
 
@@ -15,7 +15,7 @@
   margin-top: 10px;
   font-size: 0.88rem;
   max-width: 260px;
-  color: #9ca3af;
+  color: #8899a8;
 }
 
 .footer__contact-row {
@@ -24,15 +24,12 @@
   gap: 8px;
   margin-top: 8px;
   font-size: 0.85rem;
-  color: #9ca3af;
+  color: #8899a8;
 }
-.footer__contact-row a {
-  color: #d1d5db;
-}
-.footer__contact-row a:hover {
-  color: #ffffff;
-}
+.footer__contact-row a { color: #c9d1db; }
+.footer__contact-row a:hover { color: #ffffff; }
 
+/* Logo — White text, orange icon */
 .footer__logo {
   display: flex;
   align-items: center;
@@ -43,7 +40,7 @@
   color: #ffffff;
 }
 .footer__logo:hover { color: #ffffff; }
-.footer__logo svg { color: var(--accent); }
+.footer__logo svg { color: var(--orange); }
 
 .footer__col {
   display: flex;
@@ -52,14 +49,14 @@
 }
 .footer__col h4 {
   font-size: 0.82rem;
-  color: #ffffff;
+  color: var(--orange);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 4px;
 }
 .footer__col a,
 .footer__col p {
-  color: #9ca3af;
+  color: #8899a8;
   font-size: 0.88rem;
 }
 .footer__col a:hover { color: #ffffff; }
@@ -70,7 +67,7 @@
 }
 .footer__bottom p {
   text-align: center;
-  color: #6b7280;
+  color: #5a6a7a;
   font-size: 0.82rem;
 }
 
