@@ -27,7 +27,6 @@ export default function Navbar() {
       <div className="container navbar__inner">
         <Link to="/" className="navbar__logo" aria-label="Home">
           <img src="/logo.png" alt="Nano's Handyman Services" className="navbar__logo-img" />
-          <span className="navbar__logo-text">Services</span>
         </Link>
 
         <ul className="navbar__links">
