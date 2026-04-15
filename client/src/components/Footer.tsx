@@ -1,4 +1,4 @@
-import { Wrench, Phone, Mail } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import "./Footer.css";
 
 export default function Footer() {
@@ -9,8 +9,7 @@ export default function Footer() {
       <div className="container footer__inner">
         <div className="footer__brand">
           <a href="#" className="footer__logo">
-            <Wrench size={18} />
-            <span>Nano's Handyman Services</span>
+            <img src="/logo.png" alt="Nano's Handyman Services" className="footer__logo-img" />
           </a>
           <p>Professional home repairs and maintenance you can trust.</p>
           <div className="footer__contact-row">

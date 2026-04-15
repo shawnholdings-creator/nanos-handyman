@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Wrench, Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -26,8 +26,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`} id="navbar">
       <div className="container navbar__inner">
         <Link to="/" className="navbar__logo" aria-label="Home">
-          <Wrench size={22} />
-          <span>Nano's Handyman</span>
+          <img src="/logo.png" alt="Nano's Handyman" className="navbar__logo-img" />
         </Link>
 
         <ul className="navbar__links">

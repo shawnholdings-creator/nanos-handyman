@@ -19,19 +19,16 @@
   justify-content: space-between;
 }
 
-/* Logo — Navy base with orange accent */
+/* Logo */
 .navbar__logo {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.25rem;
-  color: var(--navy);
-  white-space: nowrap;
 }
-.navbar__logo:hover { color: var(--navy-light); }
-.navbar__logo svg { color: var(--orange); }
+.navbar__logo-img {
+  height: 40px;
+  width: auto;
+}
+.navbar__logo:hover { opacity: 0.85; }
 
 /* Links */
 .navbar__links {
