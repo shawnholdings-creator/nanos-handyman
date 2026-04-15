@@ -20,7 +20,7 @@ export default function Hero() {
         >
           <div className="hero__badge-top">
             <Shield size={14} />
-            <span>Trusted by 2,500+ homeowners</span>
+            <span>Trusted by 500+ homeowners</span>
           </div>
 
           <h1>
