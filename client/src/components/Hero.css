@@ -1,0 +1,132 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  background: var(--bg-secondary);
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+/* Badge Top */
+.hero__badge-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent-subtle);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+/* Content */
+.hero__content h1 {
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+.hero__subtitle {
+  font-size: 1.05rem;
+  max-width: 480px;
+  margin-bottom: 32px;
+  color: var(--text-secondary);
+}
+.hero__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.hero__badges {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.hero__badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+.hero__badge svg { color: var(--success); }
+
+/* Checklist Visual */
+.hero__checklist {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+.hero__checklist-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+.hero__checklist-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+}
+.hero__checklist-row:last-child {
+  border-bottom: none;
+}
+.hero__checklist-check {
+  color: var(--success);
+  flex-shrink: 0;
+}
+.hero__checklist-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.hero__checklist-job {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+.hero__checklist-time {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.hero__checklist-status {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--success);
+  background: rgba(22, 163, 74, 0.08);
+  padding: 3px 10px;
+  border-radius: 100px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .hero__content { text-align: center; }
+  .hero__subtitle { margin-left: auto; margin-right: auto; }
+  .hero__actions { justify-content: center; }
+  .hero__badges { justify-content: center; }
+  .hero__badge-top { margin-left: auto; margin-right: auto; }
+}
+
+@media (max-width: 480px) {
+  .hero { padding-top: 72px; min-height: auto; padding-bottom: 48px; }
+  .hero__actions { flex-direction: column; }
+  .hero__actions .btn { width: 100%; }
+  .hero__badges { flex-direction: column; align-items: center; gap: 12px; }
+}
