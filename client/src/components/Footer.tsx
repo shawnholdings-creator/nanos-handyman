@@ -14,10 +14,10 @@ export default function Footer() {
           </a>
           <p>Professional home repairs and maintenance you can trust.</p>
           <div className="footer__contact-row">
-            <Phone size={14} /> <a href="tel:5551234567">(555) 123-4567</a>
+            <Phone size={14} /> <a href="tel:4806223481">(480) 622-3481</a>
           </div>
           <div className="footer__contact-row">
-            <Mail size={14} /> <span>nano@handymanservices.com</span>
+            <Mail size={14} /> <span>emilianomartinez1649@gmail.com</span>
           </div>
         </div>
 

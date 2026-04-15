@@ -37,8 +37,8 @@ export default function Hero() {
             <a href="#contact" className="btn btn-primary">
               Get a Free Estimate <ArrowRight size={16} />
             </a>
-            <a href="tel:5551234567" className="btn btn-secondary">
-              Call (555) 123-4567
+            <a href="tel:4806223481" className="btn btn-secondary">
+              Call (480) 622-3481
             </a>
           </div>
 
