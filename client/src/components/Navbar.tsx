@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`} id="navbar">
       <div className="container navbar__inner">
-        <Link to="/" className="navbar__logo" aria-label="Home">
+        <Link to="/" className="navbar__logo" aria-label="Home" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <img src="/logo.png" alt="Nano's Handyman Services" className="navbar__logo-img" />
         </Link>
 
