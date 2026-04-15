@@ -111,6 +111,36 @@
   cursor: default;
 }
 
+/* Thank You Screen */
+.contact__thankyou {
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+.contact__thankyou-icon {
+  color: var(--success);
+  margin-bottom: 20px;
+}
+.contact__thankyou h2 {
+  margin-bottom: 12px;
+  color: var(--navy);
+}
+.contact__thankyou p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+.contact__thankyou-info {
+  margin: 32px 0 20px;
+  padding: 24px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+}
+.contact__thankyou-info p {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
   .contact__inner { grid-template-columns: 1fr; gap: 40px; }
   .contact__info { text-align: center; }
