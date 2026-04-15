@@ -123,7 +123,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="contact__detail-label">Service Area</span>
-                  <span className="contact__detail-value">Greater Metro Area</span>
+                  <span className="contact__detail-value">Greater Phoenix Area</span>
                 </div>
               </div>
             </div>
