@@ -44,3 +44,8 @@
   .services__grid { grid-template-columns: 1fr; gap: 12px; }
   .services__card { padding: 20px; }
 }
+
+.services__view-all {
+  margin-top: 40px;
+  display: inline-flex;
+}
