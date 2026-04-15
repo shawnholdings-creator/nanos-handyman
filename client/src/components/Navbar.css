@@ -26,9 +26,8 @@
   gap: 0;
 }
 .navbar__logo-img {
-  height: 120px;
+  height: 48px;
   width: auto;
-  margin: -20px 0;
 }
 .navbar__logo-text {
   font-family: var(--font-heading);
@@ -98,6 +97,6 @@
   .navbar__cta { display: none !important; }
   .navbar__hamburger { display: flex; }
   .navbar__mobile--open { display: flex; }
-  .navbar__logo-img { height: 100px; margin: -18px 0; }
+  .navbar__logo-img { height: 40px; }
   .navbar__logo-text { font-size: 1rem; margin-bottom: 3px; }
 }
