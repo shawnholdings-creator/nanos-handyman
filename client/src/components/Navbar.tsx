@@ -26,7 +26,8 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`} id="navbar">
       <div className="container navbar__inner">
         <Link to="/" className="navbar__logo" aria-label="Home">
-          <img src="/logo.png" alt="Nano's Handyman" className="navbar__logo-img" />
+          <img src="/logo.png" alt="Nano's Handyman Services" className="navbar__logo-img" />
+          <span className="navbar__logo-text">Services</span>
         </Link>
 
         <ul className="navbar__links">
