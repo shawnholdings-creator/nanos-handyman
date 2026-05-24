@@ -17,6 +17,7 @@ export default function Navbar() {
 
   const links = [
     { label: "Services", href: isHome ? "#services" : "/#services" },
+    { label: "Projects", href: "/projects" },
     { label: "Why Us", href: isHome ? "#why-us" : "/#why-us" },
     { label: "Reviews", href: isHome ? "#reviews" : "/#reviews" },
     { label: "Contact", href: isHome ? "#contact" : "/#contact" },
@@ -26,7 +27,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`} id="navbar">
       <div className="container navbar__inner">
         <Link to="/" className="navbar__logo" aria-label="Home" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <img src="/logo.png" alt="Nano's Handyman Services" className="navbar__logo-img" />
+          <img src="/logo.png" alt="Nano's Home Services" className="navbar__logo-img" />
         </Link>
 
         <ul className="navbar__links">

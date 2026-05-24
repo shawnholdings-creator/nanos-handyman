@@ -7,6 +7,9 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AllServices from "./components/AllServices";
+import ProjectsPage from "./components/ProjectsPage";
+import ServiceLanding from "./components/ServiceLanding";
+import OwnerPage from "./components/OwnerPage";
 
 function HomePage() {
   return (
@@ -27,8 +30,14 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<AllServices />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/drywall-repair-phoenix" element={<ServiceLanding />} />
+        <Route path="/ceiling-fan-installation-phoenix" element={<ServiceLanding />} />
+        <Route path="/faucet-repair-phoenix" element={<ServiceLanding />} />
+        <Route path="/owner" element={<OwnerPage />} />
       </Routes>
       <Footer />
     </>
   );
 }
+

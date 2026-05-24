@@ -65,7 +65,7 @@ const sections = [
       { icon: Filter, name: "Filter Replacement", desc: "HVAC filters and basic upkeep." },
       { icon: Truck, name: "Move-In / Move-Out Repairs", desc: "Quick fixes for renters and home sales." },
       { icon: Sparkles, name: "Home Refresh Packages", desc: "Paint touch-ups + minor repairs bundle." },
-      { icon: Building2, name: "Rental Property Maintenance", desc: "Ongoing handyman support for landlords." },
+      { icon: Building2, name: "Rental Property Maintenance", desc: "Ongoing home repair support for landlords." },
     ],
   },
 ];
@@ -82,9 +82,9 @@ export default function AllServices() {
             <ArrowLeft size={16} /> Back to Home
           </Link>
           <span className="section-label">Full Service List</span>
-          <h1>Everything We Do</h1>
+          <h1>Home Services in Phoenix</h1>
           <p className="section-subtitle">
-            From quick fixes to full renovations — here's every service Nano's Handyman offers.
+            From drywall repair to ceiling fan installation — here's every service Nano's Home Services offers across Phoenix, Chandler, Mesa, Tempe &amp; Scottsdale.
           </p>
         </div>
 
@@ -118,7 +118,7 @@ export default function AllServices() {
         {/* Bottom CTA */}
         <div className="all-services__cta text-center">
           <h2>Ready to Get Started?</h2>
-          <p>Contact us for a free estimate on any service.</p>
+          <p>Contact us for a free estimate on any home service in Phoenix.</p>
           <div className="all-services__cta-actions">
             <Link to="/#contact" className="btn btn-primary">
               Get a Free Estimate

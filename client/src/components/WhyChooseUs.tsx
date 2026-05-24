@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Award, Clock, ShieldCheck, CheckCircle } from "lucide-react";
+import { Award, Clock, CheckCircle } from "lucide-react";
 import "./WhyChooseUs.css";
 
 const reasons = [
@@ -8,11 +8,7 @@ const reasons = [
     title: "Shows Up On Time",
     desc: "We respect your schedule. Arrive when promised, every appointment.",
   },
-  {
-    icon: ShieldCheck,
-    title: "Licensed & Insured",
-    desc: "Fully licensed and insured for your protection and peace of mind.",
-  },
+
   {
     icon: Award,
     title: "Quality Guaranteed",

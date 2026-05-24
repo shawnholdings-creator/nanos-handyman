@@ -3,7 +3,6 @@ import { Shield, Clock, Star, ArrowRight, CheckCircle } from "lucide-react";
 import "./Hero.css";
 
 const badges = [
-  { icon: CheckCircle, label: "Licensed & Insured" },
   { icon: Clock, label: "Same-Day Service" },
   { icon: Star, label: "5-Star Rated" },
 ];
@@ -24,13 +23,17 @@ export default function Hero() {
           </div>
 
           <h1>
-            Reliable Handyman Services.<br />
+            Professional Home Services in Phoenix.<br />
             <span className="text-accent">Done Right, Every Time.</span>
           </h1>
 
           <p className="hero__subtitle">
-            From quick fixes to full renovations — Nano's Handyman shows up on
+            From quick fixes to full renovations — Nano's Home Services shows up on
             time, gets it done right, and leaves your home better than we found it.
+          </p>
+
+          <p className="hero__service-area">
+            Serving Phoenix, Chandler, Mesa, Tempe &amp; Scottsdale
           </p>
 
           <div className="hero__actions">

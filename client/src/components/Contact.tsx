@@ -30,7 +30,7 @@ export default function Contact() {
     const formData = new FormData(form);
 
     try {
-      await fetch("https://formsubmit.co/ajax/shawnsunder@yahoo.com", {
+      await fetch("https://formsubmit.co/ajax/emilianomartinez1649@gmail.com", {
         method: "POST",
         body: formData,
       });
@@ -171,7 +171,7 @@ export default function Contact() {
             </div>
 
             {/* FormSubmit config */}
-            <input type="hidden" name="_subject" value="New Quote Request — Nano's Handyman" />
+            <input type="hidden" name="_subject" value="New Quote Request — Nano's Home Services" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
 

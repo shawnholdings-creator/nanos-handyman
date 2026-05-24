@@ -148,4 +148,10 @@
   .contact__details { align-items: center; }
   .contact__row { grid-template-columns: 1fr; }
   .contact__form { padding: 24px; }
+  .contact__field input,
+  .contact__field select,
+  .contact__field textarea {
+    padding: 12px 14px;
+    font-size: 16px; /* prevents iOS zoom */
+  }
 }
