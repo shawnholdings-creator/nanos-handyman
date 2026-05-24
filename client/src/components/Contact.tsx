@@ -30,9 +30,10 @@ export default function Contact() {
     const formData = new FormData(form);
 
     try {
-      await fetch("https://formsubmit.co/ajax/emilianomartinez1649@gmail.com", {
+      await fetch("https://formspree.io/f/emilianomartinez1649@gmail.com", {
         method: "POST",
         body: formData,
+        headers: { Accept: "application/json" },
       });
       setSubmitted(true);
       form.reset();
@@ -170,10 +171,9 @@ export default function Contact() {
               <textarea id="contact-desc" name="message" rows={3} placeholder="Brief description of what you need..." />
             </div>
 
-            {/* FormSubmit config */}
+            {/* Formspree config */}
             <input type="hidden" name="_subject" value="New Quote Request — Nano's Home Services" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_gotcha" style={{ display: "none" }} />
 
             <button type="submit" className="btn btn-primary contact__submit" disabled={sending}>
               {sending ? "Sending..." : <>Send Request <Send size={14} /></>}
